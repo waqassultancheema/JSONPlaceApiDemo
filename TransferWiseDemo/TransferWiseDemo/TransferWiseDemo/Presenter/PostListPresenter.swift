@@ -10,7 +10,7 @@
 import UIKit
 protocol PostListPresenterInput
 {
-    func presentFetchPostList(posts:[Post])
+    func presentFetchPostList(posts:[PostBo])
     func presentFetchedError(error:String)
 }
 
@@ -23,7 +23,7 @@ class PostListPresenter:PostListPresenterInput {
  
     var output:PostListPresenterOutput!
     
-    func presentFetchPostList(posts: [Post]) {
+    func presentFetchPostList(posts: [PostBo]) {
         if let output  = output {
             
             if posts.count == 0 {
@@ -45,7 +45,7 @@ class PostListPresenter:PostListPresenterInput {
     }
     
     
-    func convertDataIntoViewModel(posts:[Post]) ->  [ViewModel.DisplayViewModel.PostListViewModel] {
+    func convertDataIntoViewModel(posts:[PostBo]) ->  [ViewModel.DisplayViewModel.PostListViewModel] {
 
         var displayViewModels:[ViewModel.DisplayViewModel.PostListViewModel] = []
 

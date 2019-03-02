@@ -34,7 +34,7 @@ class PostTests: XCTestCase {
     func testShouldCreatePostFromDictionary()  {
         let firstPostJson = jsonPostsDictionaryStub.first
         do {
-             let post = try Post(firstPostJson!)
+             let post = try PostBo(firstPostJson!)
              XCTAssertNotNil(post)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -45,7 +45,7 @@ class PostTests: XCTestCase {
     func testShouldGetId() {
         let firstPostJson = jsonPostsDictionaryStub.first
         do {
-            let post = try Post(firstPostJson!)
+            let post = try PostBo(firstPostJson!)
             XCTAssertNotNil(post.id)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -56,7 +56,7 @@ class PostTests: XCTestCase {
     func testShouldGetUserId() {
         let firstPostJson = jsonPostsDictionaryStub.first
         do {
-            let post = try Post(firstPostJson!)
+            let post = try PostBo(firstPostJson!)
             XCTAssertNotNil(post.userID)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -67,7 +67,7 @@ class PostTests: XCTestCase {
     func testShouldGetTitle() {
         let firstPostJson = jsonPostsDictionaryStub.first
         do {
-            let post = try Post(firstPostJson!)
+            let post = try PostBo(firstPostJson!)
             XCTAssertNotNil(post.title)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -78,7 +78,7 @@ class PostTests: XCTestCase {
     func testShouldGetBody() {
         let firstPostJson = jsonPostsDictionaryStub.first
         do {
-            let post = try Post(firstPostJson!)
+            let post = try PostBo(firstPostJson!)
             XCTAssertNotNil(post.body)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -88,22 +88,22 @@ class PostTests: XCTestCase {
     
     
     func testUserIdShouldBePositiveNumber() {
-        let post =  Post(userID: 0, id: 0, title: "", body: "")
+        let post =  PostBo(userID: 0, id: 0, title: "", body: "")
         XCTAssertGreaterThanOrEqual(post.userID, 0)
     }
     
     func testUserIdShouldBeGreaterThanZero() {
-        let post =  Post(userID: 1, id: 1, title: "", body: "")
+        let post =  PostBo(userID: 1, id: 1, title: "", body: "")
         XCTAssertGreaterThanOrEqual(post.userID, 1)
     }
     
     func testIdShouldBeGreaterThanZero() {
-        let post =  Post(userID: 1, id: 1, title: "", body: "")
+        let post =  PostBo(userID: 1, id: 1, title: "", body: "")
         XCTAssertGreaterThanOrEqual(post.id, 1)
     }
     
     func testIdShouldBePositiveNumber() {
-        let post =  Post(userID: 0, id: 0, title: "", body: "")
+        let post =  PostBo(userID: 0, id: 0, title: "", body: "")
         XCTAssertGreaterThanOrEqual(post.id, 0)
     }
     

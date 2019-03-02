@@ -34,7 +34,7 @@ class PostDetailTests: XCTestCase {
     func testShouldCreatePostFromDictionary()  {
         let firstPostJson = jsonCommentsDictionaryStub.first
         do {
-             let comment = try Comment(firstPostJson!)
+             let comment = try CommentBo(firstPostJson!)
              XCTAssertNotNil(comment)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -45,7 +45,7 @@ class PostDetailTests: XCTestCase {
     func testShouldGetId() {
         let firstPostJson = jsonCommentsDictionaryStub.first
         do {
-            let comment = try Comment(firstPostJson!)
+            let comment = try CommentBo(firstPostJson!)
             XCTAssertNotNil(comment.id)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -56,7 +56,7 @@ class PostDetailTests: XCTestCase {
     func testShouldGetName() {
         let firstPostJson = jsonCommentsDictionaryStub.first
         do {
-            let comment = try Comment(firstPostJson!)
+            let comment = try CommentBo(firstPostJson!)
             XCTAssertNotNil(comment.name)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -67,7 +67,7 @@ class PostDetailTests: XCTestCase {
     func testShouldGetEmail() {
         let firstPostJson = jsonCommentsDictionaryStub.first
         do {
-            let comment = try Comment(firstPostJson!)
+            let comment = try CommentBo(firstPostJson!)
             XCTAssertNotNil(comment.email)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -78,7 +78,7 @@ class PostDetailTests: XCTestCase {
     func testShouldGetBody() {
         let firstPostJson = jsonCommentsDictionaryStub.first
         do {
-            let comment = try Comment(firstPostJson!)
+            let comment = try CommentBo(firstPostJson!)
             XCTAssertNotNil(comment.body)
         } catch {
             XCTFail("Problem in Parsing of Dictioanry")
@@ -88,12 +88,12 @@ class PostDetailTests: XCTestCase {
     
     
     func testPostIdShouldBePositiveNumber() {
-        let comment =  Comment(postID: 0, id: 0, name: "", email: "", body: "")
+        let comment =  CommentBo(postID: 0, id: 0, name: "", email: "", body: "")
         XCTAssertGreaterThanOrEqual(comment.postID, 0)
     }
     
     func testIdShouldBeGreaterThanZero() {
-        let comment =  Comment(postID: 0, id: 1, name: "", email: "", body: "")
+        let comment =  CommentBo(postID: 0, id: 1, name: "", email: "", body: "")
         XCTAssertGreaterThanOrEqual(comment.id, 1)
     }
     

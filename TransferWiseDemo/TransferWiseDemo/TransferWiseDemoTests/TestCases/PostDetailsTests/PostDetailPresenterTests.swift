@@ -12,12 +12,12 @@ import XCTest
 
 class PostDetailPresenterTests: XCTestCase {
 
-    var stubComment:StubComments?
+    var stubComment:CommentBo?
     var sutPres:PostDetailPresenter?
 
     override func setUp() {
         super.setUp()
-        stubComment = StubComments.dummyComment()
+        stubComment = CommentBo.dummyComment()
         sutPres = PostDetailPresenter()
     }
     

@@ -24,7 +24,7 @@ class PostDetailInteractorTests: XCTestCase {
         sutPostDetailViewController?.configureTableViewDataSource()
         
         stubRemoteWorker = StubPostDetailRemoteWorker()
-        stubRemoteWorker?.dataToReturnOnSuccess = [StubComments.dummyComment()]
+        stubRemoteWorker?.dataToReturnOnSuccess = [CommentBo.dummyComment()]
         
        
         

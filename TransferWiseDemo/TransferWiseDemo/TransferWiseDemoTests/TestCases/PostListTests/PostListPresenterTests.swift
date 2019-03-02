@@ -12,12 +12,12 @@ import XCTest
 
 class PostListPresenterTests: XCTestCase {
 
-    var stubPost:StubPost?
+    var stubPost:PostBo?
     var sutPres:PostListPresenter?
 
     override func setUp() {
         super.setUp()
-        stubPost = StubPost.dummyPost()
+        stubPost = PostBo.dummyPost()
         sutPres = PostListPresenter()
     }
     

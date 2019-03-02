@@ -67,7 +67,7 @@ extension PostDetailInteractor: PostDetailViewControllerGetComments
 
 extension PostDetailPresenter: PostDetailInteractorOutput
 {
-    func passedToPresenterFetchedPostDetail(comments: [Comment]) {
+    func passedToPresenterFetchedPostDetail(comments: [CommentBo]) {
          self.presentFetchPostDetail(comments: comments)
     }
     

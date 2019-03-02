@@ -13,7 +13,7 @@ class StubPostListPresenter: PostListPresenter {
     var presentFetchedOrdersCalled = false
     
     
-    override func presentFetchPostList(posts: [Post]) {
+    override func presentFetchPostList(posts: [PostBo]) {
         super.presentFetchPostList(posts: posts)
         presentFetchedOrdersCalled = true
     }

@@ -14,7 +14,7 @@ protocol PostListInteractorInput {
 }
 
 protocol PostListInteractorOutput {
-    func passedToPresenterFetchedPostList(posts:[Post])
+    func passedToPresenterFetchedPostList(posts:[PostBo])
     func errorWhileFetchPostList(error:String)
 
 
@@ -22,11 +22,11 @@ protocol PostListInteractorOutput {
 class PostListInteractor:PostListInteractorInput {
 
     var output: PostListInteractorOutput!
-    var worker: PostListRemoteWorker!
+    var worker: PostListWorker!
     
     func fetchPostList() {
         if worker == nil {
-            worker = PostListRemoteWorker()
+            worker = PostListWorker()
         }
         worker.fetchPostLists( complete: { [unowned self] (posts) in
             self.output.passedToPresenterFetchedPostList(posts: posts)

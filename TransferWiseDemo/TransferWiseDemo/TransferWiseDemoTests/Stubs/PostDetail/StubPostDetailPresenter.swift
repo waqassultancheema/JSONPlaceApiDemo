@@ -13,7 +13,7 @@ class StubPostDetailPresenter: PostDetailPresenter {
     var presentFetchedOrdersCalled = false
     
     
-    override func presentFetchPostDetail(comments: [Comment]) {
+    override func presentFetchPostDetail(comments: [CommentBo]) {
         super.presentFetchPostDetail(comments: comments)
         presentFetchedOrdersCalled = true
     }

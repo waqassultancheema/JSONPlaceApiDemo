@@ -10,12 +10,12 @@
 
 import UIKit
 let PostList = 1
-typealias Posts = [Post]
+typealias Posts = [PostBo]
 class PostListRemoteWorker: NSObject,WebAPIHandler {
    
      private var requestURLString = "\(APIURLPrefix)/posts"
     
-    func fetchPostLists( complete :@escaping ([Post]) -> Void, failure:@escaping (String?) -> Void) {
+    func fetchPostLists( complete :@escaping ([PostBo]) -> Void, failure:@escaping (String?) -> Void) {
         
         getDataFromServer(url: requestURLString) { (response, error) in
             guard error == nil else {

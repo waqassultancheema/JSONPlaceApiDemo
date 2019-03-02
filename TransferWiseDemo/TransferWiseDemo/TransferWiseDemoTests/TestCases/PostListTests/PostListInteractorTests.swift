@@ -23,7 +23,7 @@ class PostListInteractorTests: XCTestCase {
         sutPostListViewController?.configureTableViewDataSource()
         
         stubRemoteWorker = StubPostListRemoteWorker()
-        stubRemoteWorker?.dataToReturnOnSuccess = [StubPost.dummyPost()]
+        stubRemoteWorker?.dataToReturnOnSuccess = [PostBo.dummyPost()]
 
     }
     

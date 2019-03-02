@@ -14,7 +14,7 @@ protocol PostDetailInteractorInput {
 }
 
 protocol PostDetailInteractorOutput {
-    func passedToPresenterFetchedPostDetail(comments:[Comment])
+    func passedToPresenterFetchedPostDetail(comments:[CommentBo])
     func errorWhileFetchPostDetail(error:String)
 
 

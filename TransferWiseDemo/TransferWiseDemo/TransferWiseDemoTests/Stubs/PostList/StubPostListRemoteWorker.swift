@@ -12,11 +12,11 @@ import Foundation
 class StubPostListRemoteWorker: PostListRemoteWorker {
 
     var shouldFailOnFetch:Bool = false
-    var dataToReturnOnSuccess:[Post]?
+    var dataToReturnOnSuccess:[PostBo]?
     
 
     
-    override func fetchPostLists(complete: @escaping ([Post]) -> Void, failure: @escaping (String?) -> Void) {
+    override func fetchPostLists(complete: @escaping ([PostBo]) -> Void, failure: @escaping (String?) -> Void) {
         if shouldFailOnFetch {
             failure(NetworkError.other("Test failing").localizedDescription)
         } else {

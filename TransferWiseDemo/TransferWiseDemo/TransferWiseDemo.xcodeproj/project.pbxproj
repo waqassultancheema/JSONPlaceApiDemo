@@ -21,19 +21,28 @@
 		29101B342223D008004478DD /* PostDetailRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29101B332223D008004478DD /* PostDetailRemoteWorker.swift */; };
 		29101B362223D044004478DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29101B352223D044004478DD /* Constants.swift */; };
 		29101B382223D06E004478DD /* CommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29101B372223D06E004478DD /* CommentRequest.swift */; };
-		293B5FEE2223F05600530FB6 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FED2223F05600530FB6 /* Comment.swift */; };
+		2916B83E2227FDCA0047E188 /* PostListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B83D2227FDCA0047E188 /* PostListWorker.swift */; };
+		2916B8422227FE0F0047E188 /* PostDetailLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B8402227FE0F0047E188 /* PostDetailLocalWorker.swift */; };
+		2916B8432227FE0F0047E188 /* PostListLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B8412227FE0F0047E188 /* PostListLocalWorker.swift */; };
+		293B5FEE2223F05600530FB6 /* CommentBo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FED2223F05600530FB6 /* CommentBo.swift */; };
 		293B5FF32225222C00530FB6 /* PostDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF02225222C00530FB6 /* PostDetailTests.swift */; };
 		293B5FF42225222C00530FB6 /* PostDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */; };
 		293B5FF52225222C00530FB6 /* PostDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF22225222C00530FB6 /* PostDetailPresenterTests.swift */; };
 		293B5FF7222522C100530FB6 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 293B5FF6222522C100530FB6 /* comments.json */; };
 		293B5FFD2225286800530FB6 /* StubPostListRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF92225286800530FB6 /* StubPostListRemoteWorker.swift */; };
-		293B5FFE2225286800530FB6 /* StubPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FFA2225286800530FB6 /* StubPost.swift */; };
 		293B5FFF2225286800530FB6 /* StubPostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FFB2225286800530FB6 /* StubPostListViewController.swift */; };
 		293B60002225286800530FB6 /* StubPostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FFC2225286800530FB6 /* StubPostListPresenter.swift */; };
 		293B60062225292200530FB6 /* StubPostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B60022225292200530FB6 /* StubPostDetailViewController.swift */; };
 		293B60072225292200530FB6 /* StubPostDetailRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B60032225292200530FB6 /* StubPostDetailRemoteWorker.swift */; };
-		293B60082225292200530FB6 /* StubComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B60042225292200530FB6 /* StubComments.swift */; };
 		293B60092225292200530FB6 /* StubPostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B60052225292200530FB6 /* StubPostDetailPresenter.swift */; };
+		293B601522255A5E00530FB6 /* TransferWiseDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 293B601322255A5E00530FB6 /* TransferWiseDemo.xcdatamodeld */; };
+		293B60192226808500530FB6 /* CodingUserInfoKey+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B60182226808500530FB6 /* CodingUserInfoKey+Util.swift */; };
+		293B601E2227D0B400530FB6 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B601A2227D0B400530FB6 /* Post+CoreDataClass.swift */; };
+		293B601F2227D0B400530FB6 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B601B2227D0B400530FB6 /* Post+CoreDataProperties.swift */; };
+		293B60202227D0B400530FB6 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B601C2227D0B400530FB6 /* Comment+CoreDataClass.swift */; };
+		293B60212227D0B400530FB6 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B601D2227D0B400530FB6 /* Comment+CoreDataProperties.swift */; };
+		293B60262227E5FC00530FB6 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B60252227E5FC00530FB6 /* CoreDataStore.swift */; };
+		293B60282227E7E500530FB6 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B60272227E7E500530FB6 /* PostStore.swift */; };
 		29C67C252219374F00EA156F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C242219374F00EA156F /* AppDelegate.swift */; };
 		29C67C2A2219374F00EA156F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C67C282219374F00EA156F /* Main.storyboard */; };
 		29C67C2C2219375000EA156F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C67C2B2219375000EA156F /* Assets.xcassets */; };
@@ -52,7 +61,7 @@
 		29C67C912219722600EA156F /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C902219722600EA156F /* PostListPresenter.swift */; };
 		29C67C932219724B00EA156F /* PostListAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C922219724B00EA156F /* PostListAppRouter.swift */; };
 		29C67C952219726600EA156F /* PostListRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C942219726600EA156F /* PostListRemoteWorker.swift */; };
-		29C67C97221973D100EA156F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C96221973D100EA156F /* Post.swift */; };
+		29C67C97221973D100EA156F /* PostBo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C96221973D100EA156F /* PostBo.swift */; };
 		29C67C99221A8B5000EA156F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C98221A8B4F00EA156F /* Helper.swift */; };
 		29C67C9E221A8F9A00EA156F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C9D221A8F9A00EA156F /* ActivityIndicator.swift */; };
 		29C67CA0221A904900EA156F /* PostListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C9F221A904900EA156F /* PostListConfigurator.swift */; };
@@ -92,19 +101,28 @@
 		29101B332223D008004478DD /* PostDetailRemoteWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailRemoteWorker.swift; sourceTree = "<group>"; };
 		29101B352223D044004478DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29101B372223D06E004478DD /* CommentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRequest.swift; sourceTree = "<group>"; };
-		293B5FED2223F05600530FB6 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		2916B83D2227FDCA0047E188 /* PostListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListWorker.swift; sourceTree = "<group>"; };
+		2916B8402227FE0F0047E188 /* PostDetailLocalWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailLocalWorker.swift; sourceTree = "<group>"; };
+		2916B8412227FE0F0047E188 /* PostListLocalWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListLocalWorker.swift; sourceTree = "<group>"; };
+		293B5FED2223F05600530FB6 /* CommentBo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBo.swift; sourceTree = "<group>"; };
 		293B5FF02225222C00530FB6 /* PostDetailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTests.swift; sourceTree = "<group>"; };
 		293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractorTests.swift; sourceTree = "<group>"; };
 		293B5FF22225222C00530FB6 /* PostDetailPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenterTests.swift; sourceTree = "<group>"; };
 		293B5FF6222522C100530FB6 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
 		293B5FF92225286800530FB6 /* StubPostListRemoteWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubPostListRemoteWorker.swift; sourceTree = "<group>"; };
-		293B5FFA2225286800530FB6 /* StubPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubPost.swift; sourceTree = "<group>"; };
 		293B5FFB2225286800530FB6 /* StubPostListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubPostListViewController.swift; sourceTree = "<group>"; };
 		293B5FFC2225286800530FB6 /* StubPostListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubPostListPresenter.swift; sourceTree = "<group>"; };
 		293B60022225292200530FB6 /* StubPostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubPostDetailViewController.swift; sourceTree = "<group>"; };
 		293B60032225292200530FB6 /* StubPostDetailRemoteWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubPostDetailRemoteWorker.swift; sourceTree = "<group>"; };
-		293B60042225292200530FB6 /* StubComments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubComments.swift; sourceTree = "<group>"; };
 		293B60052225292200530FB6 /* StubPostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubPostDetailPresenter.swift; sourceTree = "<group>"; };
+		293B601422255A5E00530FB6 /* TransferWiseDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransferWiseDemo.xcdatamodel; sourceTree = "<group>"; };
+		293B60182226808500530FB6 /* CodingUserInfoKey+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Util.swift"; sourceTree = "<group>"; };
+		293B601A2227D0B400530FB6 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		293B601B2227D0B400530FB6 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		293B601C2227D0B400530FB6 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		293B601D2227D0B400530FB6 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		293B60252227E5FC00530FB6 /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		293B60272227E7E500530FB6 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
 		29C67C212219374F00EA156F /* TransferWiseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferWiseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C67C242219374F00EA156F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C67C292219374F00EA156F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,7 +147,7 @@
 		29C67C902219722600EA156F /* PostListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
 		29C67C922219724B00EA156F /* PostListAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListAppRouter.swift; sourceTree = "<group>"; };
 		29C67C942219726600EA156F /* PostListRemoteWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListRemoteWorker.swift; sourceTree = "<group>"; };
-		29C67C96221973D100EA156F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		29C67C96221973D100EA156F /* PostBo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostBo.swift; sourceTree = "<group>"; };
 		29C67C98221A8B4F00EA156F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		29C67C9D221A8F9A00EA156F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		29C67C9F221A904900EA156F /* PostListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListConfigurator.swift; sourceTree = "<group>"; };
@@ -207,6 +225,15 @@
 			path = CommentTableViewCell;
 			sourceTree = "<group>";
 		};
+		2916B83F2227FE0F0047E188 /* LocalWorker */ = {
+			isa = PBXGroup;
+			children = (
+				2916B8402227FE0F0047E188 /* PostDetailLocalWorker.swift */,
+				2916B8412227FE0F0047E188 /* PostListLocalWorker.swift */,
+			);
+			path = LocalWorker;
+			sourceTree = "<group>";
+		};
 		293B5FEF2225222C00530FB6 /* PostDetailsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				293B5FF92225286800530FB6 /* StubPostListRemoteWorker.swift */,
-				293B5FFA2225286800530FB6 /* StubPost.swift */,
 				293B5FFB2225286800530FB6 /* StubPostListViewController.swift */,
 				293B5FFC2225286800530FB6 /* StubPostListPresenter.swift */,
 			);
@@ -233,10 +259,37 @@
 			children = (
 				293B60022225292200530FB6 /* StubPostDetailViewController.swift */,
 				293B60032225292200530FB6 /* StubPostDetailRemoteWorker.swift */,
-				293B60042225292200530FB6 /* StubComments.swift */,
 				293B60052225292200530FB6 /* StubPostDetailPresenter.swift */,
 			);
 			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		293B601222255A2D00530FB6 /* XCDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				293B601322255A5E00530FB6 /* TransferWiseDemo.xcdatamodeld */,
+			);
+			path = XCDataModel;
+			sourceTree = "<group>";
+		};
+		293B60232227D0D600530FB6 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				293B601A2227D0B400530FB6 /* Post+CoreDataClass.swift */,
+				293B601B2227D0B400530FB6 /* Post+CoreDataProperties.swift */,
+				293B601C2227D0B400530FB6 /* Comment+CoreDataClass.swift */,
+				293B601D2227D0B400530FB6 /* Comment+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		293B60242227E5B400530FB6 /* CoreDataStore */ = {
+			isa = PBXGroup;
+			children = (
+				293B60252227E5FC00530FB6 /* CoreDataStore.swift */,
+				293B60272227E7E500530FB6 /* PostStore.swift */,
+			);
+			path = CoreDataStore;
 			sourceTree = "<group>";
 		};
 		29C67C182219374F00EA156F = {
@@ -262,6 +315,8 @@
 		29C67C232219374F00EA156F /* TransferWiseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				293B60242227E5B400530FB6 /* CoreDataStore */,
+				293B601222255A2D00530FB6 /* XCDataModel */,
 				29C67C9C221A8F8700EA156F /* CustomClasses */,
 				29C67C9B221A8F5A00EA156F /* Assets */,
 				29C67C9A221A8F4500EA156F /* StoryBoards */,
@@ -343,10 +398,11 @@
 		29C67C5E22194EA500EA156F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				29C67C96221973D100EA156F /* Post.swift */,
+				293B60232227D0D600530FB6 /* CoreDataModels */,
+				29C67C96221973D100EA156F /* PostBo.swift */,
 				29101B372223D06E004478DD /* CommentRequest.swift */,
 				29101B2F2223CFA5004478DD /* PostsRequest.swift */,
-				293B5FED2223F05600530FB6 /* Comment.swift */,
+				293B5FED2223F05600530FB6 /* CommentBo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -380,7 +436,9 @@
 		29C67C6F22194EA500EA156F /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				2916B83F2227FE0F0047E188 /* LocalWorker */,
 				29C67C7022194EA500EA156F /* NetworkWorker */,
+				2916B83D2227FDCA0047E188 /* PostListWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -441,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				29C67C9D221A8F9A00EA156F /* ActivityIndicator.swift */,
+				293B60182226808500530FB6 /* CodingUserInfoKey+Util.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -618,10 +677,14 @@
 				29C67C7522194EA500EA156F /* Request.swift in Sources */,
 				29C67C9E221A8F9A00EA156F /* ActivityIndicator.swift in Sources */,
 				29101B2A2223CE5A004478DD /* CommentTableViewCell.swift in Sources */,
+				293B60262227E5FC00530FB6 /* CoreDataStore.swift in Sources */,
+				293B601E2227D0B400530FB6 /* Post+CoreDataClass.swift in Sources */,
+				293B601F2227D0B400530FB6 /* Post+CoreDataProperties.swift in Sources */,
 				29C67C932219724B00EA156F /* PostListAppRouter.swift in Sources */,
 				29101B302223CFA5004478DD /* PostsRequest.swift in Sources */,
 				29101B282223CE5A004478DD /* PostDetailTableViewDataSource.swift in Sources */,
 				29C67C8B2219709400EA156F /* PostListViewController.swift in Sources */,
+				293B60192226808500530FB6 /* CodingUserInfoKey+Util.swift in Sources */,
 				29101B2E2223CF75004478DD /* PostDetailInteractor.swift in Sources */,
 				29101B382223D06E004478DD /* CommentRequest.swift in Sources */,
 				29C67C252219374F00EA156F /* AppDelegate.swift in Sources */,
@@ -630,7 +693,11 @@
 				29C67C8D2219709400EA156F /* PostListTableViewCell.swift in Sources */,
 				29C67C7422194EA500EA156F /* Reachability.swift in Sources */,
 				29C67C8C2219709400EA156F /* PostListTableViewDataSource.swift in Sources */,
+				2916B8422227FE0F0047E188 /* PostDetailLocalWorker.swift in Sources */,
+				293B60202227D0B400530FB6 /* Comment+CoreDataClass.swift in Sources */,
+				293B60282227E7E500530FB6 /* PostStore.swift in Sources */,
 				29C67C8F221971F400EA156F /* PostListInteractor.swift in Sources */,
+				2916B83E2227FDCA0047E188 /* PostListWorker.swift in Sources */,
 				29101B292223CE5A004478DD /* PostDetailTableViewCell.swift in Sources */,
 				29C67C912219722600EA156F /* PostListPresenter.swift in Sources */,
 				29C67CA0221A904900EA156F /* PostListConfigurator.swift in Sources */,
@@ -639,11 +706,14 @@
 				29101B342223D008004478DD /* PostDetailRemoteWorker.swift in Sources */,
 				29101B2C2223CF3A004478DD /* PostDetailConfigurator.swift in Sources */,
 				29101B322223CFC8004478DD /* PostDetailPresenter.swift in Sources */,
-				293B5FEE2223F05600530FB6 /* Comment.swift in Sources */,
+				293B5FEE2223F05600530FB6 /* CommentBo.swift in Sources */,
+				2916B8432227FE0F0047E188 /* PostListLocalWorker.swift in Sources */,
 				29C67C952219726600EA156F /* PostListRemoteWorker.swift in Sources */,
 				29101B272223CE5A004478DD /* PostDetailViewController.swift in Sources */,
-				29C67C97221973D100EA156F /* Post.swift in Sources */,
+				29C67C97221973D100EA156F /* PostBo.swift in Sources */,
 				29C67C7722194EA500EA156F /* WebAPI.swift in Sources */,
+				293B60212227D0B400530FB6 /* Comment+CoreDataProperties.swift in Sources */,
+				293B601522255A5E00530FB6 /* TransferWiseDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,7 +723,6 @@
 			files = (
 				29101B16221EAA6B004478DD /* PostListInteractorTests.swift in Sources */,
 				293B5FF42225222C00530FB6 /* PostDetailInteractorTests.swift in Sources */,
-				293B5FFE2225286800530FB6 /* StubPost.swift in Sources */,
 				293B60062225292200530FB6 /* StubPostDetailViewController.swift in Sources */,
 				293B60072225292200530FB6 /* StubPostDetailRemoteWorker.swift in Sources */,
 				29101B13221EA9A4004478DD /* PostTests.swift in Sources */,
@@ -662,7 +731,6 @@
 				293B5FF52225222C00530FB6 /* PostDetailPresenterTests.swift in Sources */,
 				293B60002225286800530FB6 /* StubPostListPresenter.swift in Sources */,
 				29C67CAE221D2A3800EA156F /* XCTestCase.swift in Sources */,
-				293B60082225292200530FB6 /* StubComments.swift in Sources */,
 				293B5FF32225222C00530FB6 /* PostDetailTests.swift in Sources */,
 				293B5FFD2225286800530FB6 /* StubPostListRemoteWorker.swift in Sources */,
 				293B60092225292200530FB6 /* StubPostDetailPresenter.swift in Sources */,
@@ -980,6 +1048,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		293B601322255A5E00530FB6 /* TransferWiseDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				293B601422255A5E00530FB6 /* TransferWiseDemo.xcdatamodel */,
+			);
+			currentVersion = 293B601422255A5E00530FB6 /* TransferWiseDemo.xcdatamodel */;
+			path = TransferWiseDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29C67C192219374F00EA156F /* Project object */;
 }

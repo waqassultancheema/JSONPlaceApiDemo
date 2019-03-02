@@ -77,7 +77,7 @@ extension PostListInteractor: PostListViewControllerGetPosts
 
 extension PostListPresenter: PostListInteractorOutput
 {
-    func passedToPresenterFetchedPostList(posts: [Post]) {
+    func passedToPresenterFetchedPostList(posts: [PostBo]) {
         self.presentFetchPostList(posts: posts)
 
     }

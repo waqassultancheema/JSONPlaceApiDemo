@@ -12,10 +12,10 @@ import Foundation
 class StubPostDetailRemoteWorker: PostDetailRemoteWorker {
 
     var shouldFailOnFetch:Bool = false
-    var dataToReturnOnSuccess:[Comment]?
+    var dataToReturnOnSuccess:[CommentBo]?
     
 
-    override func fetchCommentsDetails(request: CommentRequest.Fetch.Request, complete: @escaping ([Comment]) -> Void, failure: @escaping (String?) -> Void) {
+    override func fetchCommentsDetails(request: CommentRequest.Fetch.Request, complete: @escaping ([CommentBo]) -> Void, failure: @escaping (String?) -> Void) {
         if shouldFailOnFetch {
             failure(NetworkError.other("Test failing").localizedDescription)
         } else {

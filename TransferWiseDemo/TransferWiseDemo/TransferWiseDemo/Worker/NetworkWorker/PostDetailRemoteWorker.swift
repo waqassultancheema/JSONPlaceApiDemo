@@ -13,7 +13,7 @@ let PostDetail = 1
 class PostDetailRemoteWorker: NSObject,WebAPIHandler {
    
     
-    func fetchCommentsDetails(request:CommentRequest.Fetch.Request, complete :@escaping ([Comment]) -> Void, failure:@escaping (String?) -> Void) {
+    func fetchCommentsDetails(request:CommentRequest.Fetch.Request, complete :@escaping ([CommentBo]) -> Void, failure:@escaping (String?) -> Void) {
 
         getDataFromServer(url: request.mURL) { (response, error) in
             guard error == nil else {

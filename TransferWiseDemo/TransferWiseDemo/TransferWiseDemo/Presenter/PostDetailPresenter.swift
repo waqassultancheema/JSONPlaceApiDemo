@@ -10,7 +10,7 @@
 import UIKit
 protocol PostDetailPresenterInput
 {
-    func presentFetchPostDetail(comments:[Comment])
+    func presentFetchPostDetail(comments:[CommentBo])
     func presentFetchedError(error:String)
 }
 
@@ -23,7 +23,7 @@ class PostDetailPresenter:PostDetailPresenterInput {
  
     var output:PostDetailPresenterOutput!
     
-    func presentFetchPostDetail(comments: [Comment]) {
+    func presentFetchPostDetail(comments: [CommentBo]) {
         if let output  = output {
             
             if comments.count == 0 {
@@ -45,7 +45,7 @@ class PostDetailPresenter:PostDetailPresenterInput {
     }
     
     
-    func convertDataIntoViewModel(comments:[Comment]) ->  [CommentsViewModel.DisplayViewModel] {
+    func convertDataIntoViewModel(comments:[CommentBo]) ->  [CommentsViewModel.DisplayViewModel] {
 
         var displayViewModels:[CommentsViewModel.DisplayViewModel] = []
 
