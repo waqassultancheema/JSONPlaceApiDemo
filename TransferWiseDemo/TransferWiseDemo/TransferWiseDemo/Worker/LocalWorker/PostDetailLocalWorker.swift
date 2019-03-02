@@ -8,32 +8,31 @@
 
 
 
-import UIKit
 class PostDetailLocalWorker {
    
     
-    func fetchCommentsDetails(request:CommentRequest.Fetch.Request, complete :@escaping ([CommentBo]) -> Void, failure:@escaping (String?) -> Void) {
+    func fetchComments(request:CommentRequest.Fetch.Request, complete :@escaping ([CommentBo]) -> Void, failure:@escaping (String?) -> Void) {
 
-//        getDataFromServer(url: request.mURL) { (response, error) in
-//            guard error == nil else {
-//                failure(error?.localizedDescription)
-//                return
-//            }
-//
-//            if let mData = response as? Data {
-//                do {
-//                   let posts = try Comments(data: mData)
-//                   complete(posts)
-//                } catch  {
-//                    failure(error.localizedDescription)
-//                }
-//            }
-//        }
+        let commentStore = CommentStore()
+        
+        commentStore.fetchComments(postId: Int(request.postId) ?? 0) { (commentsBo, error) in
+            if error == nil {
+                complete(commentsBo)
+            } else {
+                failure(error?.localizedDescription)
+            }
+        }
     }
     
-    
-    
-    
+    func saveLocalComments(comments: [CommentBo], complete: @escaping (Bool?, String?) -> Void) {
+        
+        let commentStore = CommentStore()
+        
+        commentStore.saveComments(commentsToCreate: comments) { (sucess, error) in
+            complete(sucess,error?.localizedDescription)
+            
+        }
+    }
     
     
     

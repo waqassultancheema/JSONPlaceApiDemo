@@ -24,6 +24,8 @@
 		2916B83E2227FDCA0047E188 /* PostListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B83D2227FDCA0047E188 /* PostListWorker.swift */; };
 		2916B8422227FE0F0047E188 /* PostDetailLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B8402227FE0F0047E188 /* PostDetailLocalWorker.swift */; };
 		2916B8432227FE0F0047E188 /* PostListLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B8412227FE0F0047E188 /* PostListLocalWorker.swift */; };
+		2916B845222A963B0047E188 /* PostDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B844222A963B0047E188 /* PostDetailWorker.swift */; };
+		2916B847222A96B40047E188 /* CommentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B846222A96B40047E188 /* CommentStore.swift */; };
 		293B5FEE2223F05600530FB6 /* CommentBo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FED2223F05600530FB6 /* CommentBo.swift */; };
 		293B5FF32225222C00530FB6 /* PostDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF02225222C00530FB6 /* PostDetailTests.swift */; };
 		293B5FF42225222C00530FB6 /* PostDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */; };
@@ -104,6 +106,8 @@
 		2916B83D2227FDCA0047E188 /* PostListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListWorker.swift; sourceTree = "<group>"; };
 		2916B8402227FE0F0047E188 /* PostDetailLocalWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailLocalWorker.swift; sourceTree = "<group>"; };
 		2916B8412227FE0F0047E188 /* PostListLocalWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListLocalWorker.swift; sourceTree = "<group>"; };
+		2916B844222A963B0047E188 /* PostDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailWorker.swift; sourceTree = "<group>"; };
+		2916B846222A96B40047E188 /* CommentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentStore.swift; sourceTree = "<group>"; };
 		293B5FED2223F05600530FB6 /* CommentBo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBo.swift; sourceTree = "<group>"; };
 		293B5FF02225222C00530FB6 /* PostDetailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTests.swift; sourceTree = "<group>"; };
 		293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractorTests.swift; sourceTree = "<group>"; };
@@ -288,6 +292,7 @@
 			children = (
 				293B60252227E5FC00530FB6 /* CoreDataStore.swift */,
 				293B60272227E7E500530FB6 /* PostStore.swift */,
+				2916B846222A96B40047E188 /* CommentStore.swift */,
 			);
 			path = CoreDataStore;
 			sourceTree = "<group>";
@@ -436,9 +441,10 @@
 		29C67C6F22194EA500EA156F /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				2916B83D2227FDCA0047E188 /* PostListWorker.swift */,
+				2916B844222A963B0047E188 /* PostDetailWorker.swift */,
 				2916B83F2227FE0F0047E188 /* LocalWorker */,
 				29C67C7022194EA500EA156F /* NetworkWorker */,
-				2916B83D2227FDCA0047E188 /* PostListWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -692,11 +698,13 @@
 				29101B362223D044004478DD /* Constants.swift in Sources */,
 				29C67C8D2219709400EA156F /* PostListTableViewCell.swift in Sources */,
 				29C67C7422194EA500EA156F /* Reachability.swift in Sources */,
+				2916B847222A96B40047E188 /* CommentStore.swift in Sources */,
 				29C67C8C2219709400EA156F /* PostListTableViewDataSource.swift in Sources */,
 				2916B8422227FE0F0047E188 /* PostDetailLocalWorker.swift in Sources */,
 				293B60202227D0B400530FB6 /* Comment+CoreDataClass.swift in Sources */,
 				293B60282227E7E500530FB6 /* PostStore.swift in Sources */,
 				29C67C8F221971F400EA156F /* PostListInteractor.swift in Sources */,
+				2916B845222A963B0047E188 /* PostDetailWorker.swift in Sources */,
 				2916B83E2227FDCA0047E188 /* PostListWorker.swift in Sources */,
 				29101B292223CE5A004478DD /* PostDetailTableViewCell.swift in Sources */,
 				29C67C912219722600EA156F /* PostListPresenter.swift in Sources */,

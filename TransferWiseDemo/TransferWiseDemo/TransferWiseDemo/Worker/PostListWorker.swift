@@ -6,7 +6,6 @@
 //  Copyright © 2019 Waqas Sultan. All rights reserved.
 //
 
-import UIKit
 
 class PostListWorker {
     

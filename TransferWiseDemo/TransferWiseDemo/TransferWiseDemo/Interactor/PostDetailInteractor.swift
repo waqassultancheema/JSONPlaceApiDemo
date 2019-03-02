@@ -22,11 +22,11 @@ protocol PostDetailInteractorOutput {
 class PostDetailInteractor:PostDetailInteractorInput {
    
     var output: PostDetailInteractorOutput!
-    var worker: PostDetailRemoteWorker!
+    var worker: PostDetailWorker!
     
     func fetchComments(request:CommentRequest.Fetch.Request) {
         if worker == nil {
-            worker = PostDetailRemoteWorker()
+            worker = PostDetailWorker()
         }
         worker.fetchCommentsDetails(request: request,complete: { [unowned self] (comments) in
             self.output.passedToPresenterFetchedPostDetail(comments: comments)
