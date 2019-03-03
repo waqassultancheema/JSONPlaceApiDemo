@@ -13,7 +13,7 @@ import XCTest
 class PostListInteractorTests: XCTestCase {
     
     var sut:PostListInteractor?
-    var stubRemoteWorker:StubPostListRemoteWorker?
+    var stubWorker:StubPostListWorker?
     var sutPostListViewController:StubPostListViewController?
     override func setUp() {
         super.setUp()
@@ -22,8 +22,8 @@ class PostListInteractorTests: XCTestCase {
         sutPostListViewController = StubPostListViewController()
         sutPostListViewController?.configureTableViewDataSource()
         
-        stubRemoteWorker = StubPostListRemoteWorker()
-        stubRemoteWorker?.dataToReturnOnSuccess = [PostBo.dummyPost()]
+        stubWorker = StubPostListWorker()
+        stubWorker?.dataToReturnOnSuccess = [PostBo.dummyPost()]
 
     }
     
@@ -36,7 +36,7 @@ class PostListInteractorTests: XCTestCase {
         stubPostListPresentation.output = sutPostListViewController
         
         sut?.output = stubPostListPresentation
-        sut?.worker = stubRemoteWorker
+        sut?.worker = stubWorker
         sut?.fetchPostList()
         
         XCTAssertTrue(stubPostListPresentation.presentFetchedOrdersCalled, "")
@@ -50,7 +50,7 @@ class PostListInteractorTests: XCTestCase {
         stubPostListPresentation.output = sutPostListViewController
         
         sut?.output = stubPostListPresentation
-        sut?.worker = stubRemoteWorker
+        sut?.worker = stubWorker
         sut?.fetchPostList()
         let displayPost = sutPostListViewController?.tableViewDataSource.posts.first
         XCTAssertNotNil(displayPost)

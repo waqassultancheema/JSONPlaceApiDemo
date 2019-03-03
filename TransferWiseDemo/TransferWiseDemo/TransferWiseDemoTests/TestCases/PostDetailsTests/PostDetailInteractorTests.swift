@@ -13,7 +13,7 @@ import XCTest
 class PostDetailInteractorTests: XCTestCase {
     
     var sut:PostDetailInteractor?
-    var stubRemoteWorker:StubPostDetailRemoteWorker?
+    var stubWorker:StubPostDetailWorker?
     var sutPostDetailViewController:StubPostDetailViewController?
      var request:CommentRequest.Fetch.Request = CommentRequest.Fetch.Request()
     override func setUp() {
@@ -23,8 +23,8 @@ class PostDetailInteractorTests: XCTestCase {
         sutPostDetailViewController = StubPostDetailViewController()
         sutPostDetailViewController?.configureTableViewDataSource()
         
-        stubRemoteWorker = StubPostDetailRemoteWorker()
-        stubRemoteWorker?.dataToReturnOnSuccess = [CommentBo.dummyComment()]
+        stubWorker = StubPostDetailWorker()
+        stubWorker?.dataToReturnOnSuccess = [CommentBo.dummyComment()]
         
        
         
@@ -40,10 +40,10 @@ class PostDetailInteractorTests: XCTestCase {
         stubPostDetailPresentation.output = sutPostDetailViewController
         
         sut?.output = stubPostDetailPresentation
-        sut?.worker = stubRemoteWorker
+        sut?.worker = stubWorker
         request.postId = "\(1)"
         sut?.fetchComment(request: request)
-        
+
         XCTAssertTrue(stubPostDetailPresentation.presentFetchedOrdersCalled, "")
     }
     
@@ -55,7 +55,7 @@ class PostDetailInteractorTests: XCTestCase {
         stubPostDetailPresentation.output = sutPostDetailViewController
         
         sut?.output = stubPostDetailPresentation
-        sut?.worker = stubRemoteWorker
+        sut?.worker = stubWorker
         request.postId = "\(1)"
         sut?.fetchComment(request: request)
         let displayComments = sutPostDetailViewController?.tableViewDataSource.comments.first

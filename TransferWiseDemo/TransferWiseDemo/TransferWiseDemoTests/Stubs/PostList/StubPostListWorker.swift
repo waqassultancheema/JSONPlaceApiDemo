@@ -1,19 +1,23 @@
 //
-//  PostListWorker.swift
-//  TransferWiseDemo
+//  StubPostListWorker.swift
+//  TransferWiseDemoTests
 //
-//  Created by Waqas Sultan on 2/28/19.
+//  Created by Waqas Sultan on 3/3/19.
 //  Copyright © 2019 Waqas Sultan. All rights reserved.
 //
 
+@testable import TransferWiseDemo
 
-class PostListWorker {
+class StubPostListWorker: PostListWorker {
+
+    var dataToReturnOnSuccess:[PostBo]?
+    var shouldFailOnFetch:Bool = false
+
     
-
-    func fetchPostLists( complete :@escaping ([PostBo]) -> Void, failure:@escaping (String?) -> Void) {
-        
-        let localWorker = PostListLocalWorker()
-
+    override func fetchPostLists(complete: @escaping ([PostBo]) -> Void, failure: @escaping (String?) -> Void) {
+        let localWorker = StubPostListLocalWorker()
+        localWorker.dataToReturnOnSuccess = dataToReturnOnSuccess
+        localWorker.shouldFailOnFetch = shouldFailOnFetch
         localWorker.fetchLocalPosts(complete: { [unowned self ] (posts) in
             
             if posts.count == 0 {
@@ -32,29 +36,26 @@ class PostListWorker {
                 failure(error)
             })
         }
-        
     }
     
-    func fetchRemotePosts( complete :@escaping ([PostBo]) -> Void, failure:@escaping (String?) -> Void) {
-        
-        let remoteWorker = PostListRemoteWorker()
-        
+    override func fetchRemotePosts(complete: @escaping ([PostBo]) -> Void, failure: @escaping (String?) -> Void) {
+        let remoteWorker = StubPostListRemoteWorker()
+        remoteWorker.dataToReturnOnSuccess = self.dataToReturnOnSuccess
+        remoteWorker.shouldFailOnFetch = self.shouldFailOnFetch
         remoteWorker.fetchPostLists(complete: { [unowned self] (posts) in
             self.saveRemotePostsToLocal(posts: posts, complete: { (sucess) in
                 complete(posts)
             }, failure: { (error) in
-               complete(posts)
+                complete(posts)
             })
         }) { (error) in
             failure(error)
         }
-        
     }
     
-    func saveRemotePostsToLocal(posts: [PostBo], complete: @escaping (Bool?) -> Void, failure:@escaping (String?) -> Void) {
-        
-        let localWorker = PostListLocalWorker()
-        
+    override func saveRemotePostsToLocal(posts: [PostBo], complete: @escaping (Bool?) -> Void, failure: @escaping (String?) -> Void) {
+        let localWorker = StubPostListLocalWorker()
+        localWorker.shouldFailOnFetch = shouldFailOnFetch
         localWorker.saveLocalPosts(posts: posts) { (success, error) in
             if success ?? false {
                 complete(success)
@@ -62,6 +63,8 @@ class PostListWorker {
                 failure("Can not Save")
             }
         }
-        
     }
+    
+
+
 }

@@ -8,17 +8,14 @@
 
 
 
-import UIKit
-
-class PostListLocalWorker{
+class PostListLocalWorker {
    
-    
+
     
     func fetchLocalPosts( complete :@escaping ([PostBo]) -> Void, failure:@escaping (String?) -> Void) {
         
+        let  postStore = PostStore()
     
-        let postStore = PostStore()
-        
         postStore.fetchPosts { (posts, error) in
             complete(posts)
         }
@@ -27,8 +24,8 @@ class PostListLocalWorker{
     
     func saveLocalPosts(posts: [PostBo], complete: @escaping (Bool?, String?) -> Void) {
         
-        let postStore = PostStore()
-        
+          let  postStore = PostStore()
+    
         postStore.savePosts(postsToCreate: posts) { (success, error) in
             complete(success,error?.localizedDescription)
         }

@@ -26,6 +26,12 @@
 		2916B8432227FE0F0047E188 /* PostListLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B8412227FE0F0047E188 /* PostListLocalWorker.swift */; };
 		2916B845222A963B0047E188 /* PostDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B844222A963B0047E188 /* PostDetailWorker.swift */; };
 		2916B847222A96B40047E188 /* CommentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B846222A96B40047E188 /* CommentStore.swift */; };
+		2916B849222BA8CB0047E188 /* StubPostListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B848222BA8CB0047E188 /* StubPostListWorker.swift */; };
+		2916B84B222BAADD0047E188 /* StubPostDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B84A222BAADD0047E188 /* StubPostDetailWorker.swift */; };
+		2916B84D222BB7CF0047E188 /* StubPostListLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B84C222BB7CF0047E188 /* StubPostListLocalWorker.swift */; };
+		2916B84F222BB9190047E188 /* StubPostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B84E222BB9190047E188 /* StubPostStore.swift */; };
+		2916B851222BBDC90047E188 /* StubCommentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B850222BBDC90047E188 /* StubCommentStore.swift */; };
+		2916B853222BBE990047E188 /* StubPostDetailLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B852222BBE990047E188 /* StubPostDetailLocalWorker.swift */; };
 		293B5FEE2223F05600530FB6 /* CommentBo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FED2223F05600530FB6 /* CommentBo.swift */; };
 		293B5FF32225222C00530FB6 /* PostDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF02225222C00530FB6 /* PostDetailTests.swift */; };
 		293B5FF42225222C00530FB6 /* PostDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */; };
@@ -108,6 +114,12 @@
 		2916B8412227FE0F0047E188 /* PostListLocalWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListLocalWorker.swift; sourceTree = "<group>"; };
 		2916B844222A963B0047E188 /* PostDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailWorker.swift; sourceTree = "<group>"; };
 		2916B846222A96B40047E188 /* CommentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentStore.swift; sourceTree = "<group>"; };
+		2916B848222BA8CB0047E188 /* StubPostListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPostListWorker.swift; sourceTree = "<group>"; };
+		2916B84A222BAADD0047E188 /* StubPostDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPostDetailWorker.swift; sourceTree = "<group>"; };
+		2916B84C222BB7CF0047E188 /* StubPostListLocalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPostListLocalWorker.swift; sourceTree = "<group>"; };
+		2916B84E222BB9190047E188 /* StubPostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPostStore.swift; sourceTree = "<group>"; };
+		2916B850222BBDC90047E188 /* StubCommentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCommentStore.swift; sourceTree = "<group>"; };
+		2916B852222BBE990047E188 /* StubPostDetailLocalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPostDetailLocalWorker.swift; sourceTree = "<group>"; };
 		293B5FED2223F05600530FB6 /* CommentBo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBo.swift; sourceTree = "<group>"; };
 		293B5FF02225222C00530FB6 /* PostDetailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTests.swift; sourceTree = "<group>"; };
 		293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractorTests.swift; sourceTree = "<group>"; };
@@ -252,6 +264,9 @@
 			isa = PBXGroup;
 			children = (
 				293B5FF92225286800530FB6 /* StubPostListRemoteWorker.swift */,
+				2916B84C222BB7CF0047E188 /* StubPostListLocalWorker.swift */,
+				2916B84E222BB9190047E188 /* StubPostStore.swift */,
+				2916B848222BA8CB0047E188 /* StubPostListWorker.swift */,
 				293B5FFB2225286800530FB6 /* StubPostListViewController.swift */,
 				293B5FFC2225286800530FB6 /* StubPostListPresenter.swift */,
 			);
@@ -264,6 +279,9 @@
 				293B60022225292200530FB6 /* StubPostDetailViewController.swift */,
 				293B60032225292200530FB6 /* StubPostDetailRemoteWorker.swift */,
 				293B60052225292200530FB6 /* StubPostDetailPresenter.swift */,
+				2916B84A222BAADD0047E188 /* StubPostDetailWorker.swift */,
+				2916B852222BBE990047E188 /* StubPostDetailLocalWorker.swift */,
+				2916B850222BBDC90047E188 /* StubCommentStore.swift */,
 			);
 			path = PostDetail;
 			sourceTree = "<group>";
@@ -730,16 +748,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				29101B16221EAA6B004478DD /* PostListInteractorTests.swift in Sources */,
+				2916B853222BBE990047E188 /* StubPostDetailLocalWorker.swift in Sources */,
 				293B5FF42225222C00530FB6 /* PostDetailInteractorTests.swift in Sources */,
 				293B60062225292200530FB6 /* StubPostDetailViewController.swift in Sources */,
+				2916B849222BA8CB0047E188 /* StubPostListWorker.swift in Sources */,
 				293B60072225292200530FB6 /* StubPostDetailRemoteWorker.swift in Sources */,
 				29101B13221EA9A4004478DD /* PostTests.swift in Sources */,
 				29101B14221EA9A4004478DD /* PostListPresenterTests.swift in Sources */,
+				2916B84F222BB9190047E188 /* StubPostStore.swift in Sources */,
 				293B5FFF2225286800530FB6 /* StubPostListViewController.swift in Sources */,
 				293B5FF52225222C00530FB6 /* PostDetailPresenterTests.swift in Sources */,
+				2916B84B222BAADD0047E188 /* StubPostDetailWorker.swift in Sources */,
 				293B60002225286800530FB6 /* StubPostListPresenter.swift in Sources */,
 				29C67CAE221D2A3800EA156F /* XCTestCase.swift in Sources */,
+				2916B851222BBDC90047E188 /* StubCommentStore.swift in Sources */,
 				293B5FF32225222C00530FB6 /* PostDetailTests.swift in Sources */,
+				2916B84D222BB7CF0047E188 /* StubPostListLocalWorker.swift in Sources */,
 				293B5FFD2225286800530FB6 /* StubPostListRemoteWorker.swift in Sources */,
 				293B60092225292200530FB6 /* StubPostDetailPresenter.swift in Sources */,
 			);

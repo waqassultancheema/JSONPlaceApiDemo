@@ -18,15 +18,15 @@ class CommentStore:CommentStoreProtocal {
     
     
     
-    var ordersStore: CoreDataStore = CoreDataStore()
+    var commentStore: CoreDataStore = CoreDataStore()
 
     func fetchComments(postId:Int, completionHandler: @escaping ([CommentBo], StoreError?) -> Void) {
-        ordersStore.privateManagedObjectContext.perform {
+        commentStore.privateManagedObjectContext.perform {
             do {
                 let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Comment")
                 fetchRequest.predicate = NSPredicate(format: "postId == %d", postId)
 
-                let results = try self.ordersStore.privateManagedObjectContext.fetch(fetchRequest) as! [Comment]
+                let results = try self.commentStore.privateManagedObjectContext.fetch(fetchRequest) as! [Comment]
                 
                 let comments = results.map { $0.toCommentBo() }
                 completionHandler(comments, nil)
@@ -37,12 +37,12 @@ class CommentStore:CommentStoreProtocal {
     }
     
     func saveComments(commentsToCreate: [CommentBo], completionHandler: @escaping (Bool?, StoreError?) -> Void) {
-        ordersStore.privateManagedObjectContext.perform {
+        commentStore.privateManagedObjectContext.perform {
             do {
                 for commentBo in commentsToCreate {
-                    let comment = NSEntityDescription.insertNewObject(forEntityName: "Comment", into: self.ordersStore.privateManagedObjectContext) as! Comment
+                    let comment = NSEntityDescription.insertNewObject(forEntityName: "Comment", into: self.commentStore.privateManagedObjectContext) as! Comment
                     comment.fromCommentBo(commentBo: commentBo)
-                    try self.ordersStore.privateManagedObjectContext.save()
+                    try self.commentStore.privateManagedObjectContext.save()
                 }
                 completionHandler(true, nil)
             } catch {

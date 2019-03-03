@@ -18,13 +18,13 @@ class PostStore:PostStoreProtocal {
     
     
     
-    var ordersStore: CoreDataStore = CoreDataStore()
+    var postsStore: CoreDataStore = CoreDataStore()
 
     func fetchPosts(completionHandler: @escaping ([PostBo], StoreError?) -> Void) {
-        ordersStore.privateManagedObjectContext.perform {
+        postsStore.privateManagedObjectContext.perform {
             do {
                 let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Post")
-                let results = try self.ordersStore.privateManagedObjectContext.fetch(fetchRequest) as! [Post]
+                let results = try self.postsStore.privateManagedObjectContext.fetch(fetchRequest) as! [Post]
                 let posts = results.map { $0.toPostBo() }
                 completionHandler(posts, nil)
             }catch {
@@ -34,12 +34,12 @@ class PostStore:PostStoreProtocal {
     }
     
     func savePosts(postsToCreate: [PostBo], completionHandler: @escaping (Bool?, StoreError?) -> Void) {
-        ordersStore.privateManagedObjectContext.perform {
+        postsStore.privateManagedObjectContext.perform {
             do {
                 for postBo in postsToCreate {
-                    let post = NSEntityDescription.insertNewObject(forEntityName: "Post", into: self.ordersStore.privateManagedObjectContext) as! Post
+                    let post = NSEntityDescription.insertNewObject(forEntityName: "Post", into: self.postsStore.privateManagedObjectContext) as! Post
                     post.fromPostBo(postBo: postBo)
-                    try self.ordersStore.privateManagedObjectContext.save()
+                    try self.postsStore.privateManagedObjectContext.save()
                 }
                 completionHandler(true, nil)
             } catch {
