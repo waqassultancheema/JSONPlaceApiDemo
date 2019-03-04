@@ -32,6 +32,7 @@
 		2916B84F222BB9190047E188 /* StubPostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B84E222BB9190047E188 /* StubPostStore.swift */; };
 		2916B851222BBDC90047E188 /* StubCommentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B850222BBDC90047E188 /* StubCommentStore.swift */; };
 		2916B853222BBE990047E188 /* StubPostDetailLocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B852222BBE990047E188 /* StubPostDetailLocalWorker.swift */; };
+		2916B858222BE2080047E188 /* PostStoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916B857222BE2080047E188 /* PostStoresTests.swift */; };
 		293B5FEE2223F05600530FB6 /* CommentBo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FED2223F05600530FB6 /* CommentBo.swift */; };
 		293B5FF32225222C00530FB6 /* PostDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF02225222C00530FB6 /* PostDetailTests.swift */; };
 		293B5FF42225222C00530FB6 /* PostDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */; };
@@ -120,6 +121,7 @@
 		2916B84E222BB9190047E188 /* StubPostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPostStore.swift; sourceTree = "<group>"; };
 		2916B850222BBDC90047E188 /* StubCommentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCommentStore.swift; sourceTree = "<group>"; };
 		2916B852222BBE990047E188 /* StubPostDetailLocalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPostDetailLocalWorker.swift; sourceTree = "<group>"; };
+		2916B857222BE2080047E188 /* PostStoresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStoresTests.swift; sourceTree = "<group>"; };
 		293B5FED2223F05600530FB6 /* CommentBo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBo.swift; sourceTree = "<group>"; };
 		293B5FF02225222C00530FB6 /* PostDetailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTests.swift; sourceTree = "<group>"; };
 		293B5FF12225222C00530FB6 /* PostDetailInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractorTests.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				29101B11221EA9A4004478DD /* PostTests.swift */,
 				29101B12221EA9A4004478DD /* PostListPresenterTests.swift */,
 				29101B15221EAA6B004478DD /* PostListInteractorTests.swift */,
+				2916B857222BE2080047E188 /* PostStoresTests.swift */,
 			);
 			path = PostListTests;
 			sourceTree = "<group>";
@@ -748,6 +751,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29101B16221EAA6B004478DD /* PostListInteractorTests.swift in Sources */,
+				2916B858222BE2080047E188 /* PostStoresTests.swift in Sources */,
 				2916B853222BBE990047E188 /* StubPostDetailLocalWorker.swift in Sources */,
 				293B5FF42225222C00530FB6 /* PostDetailInteractorTests.swift in Sources */,
 				293B60062225292200530FB6 /* StubPostDetailViewController.swift in Sources */,
@@ -938,7 +942,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.bi.TransferWiseDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waqas.bi.TransferWiseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -955,7 +959,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.bi.TransferWiseDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waqas.bi.TransferWiseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
