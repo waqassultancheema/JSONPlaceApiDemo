@@ -56,7 +56,6 @@
 		29C67C2A2219374F00EA156F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C67C282219374F00EA156F /* Main.storyboard */; };
 		29C67C2C2219375000EA156F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C67C2B2219375000EA156F /* Assets.xcassets */; };
 		29C67C2F2219375000EA156F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C67C2D2219375000EA156F /* LaunchScreen.storyboard */; };
-		29C67C452219375000EA156F /* TransferWiseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C442219375000EA156F /* TransferWiseDemoUITests.swift */; };
 		29C67C7222194EA500EA156F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C5322194EA500EA156F /* DateHelper.swift */; };
 		29C67C7422194EA500EA156F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C5722194EA500EA156F /* Reachability.swift */; };
 		29C67C7522194EA500EA156F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C67C5822194EA500EA156F /* Request.swift */; };
@@ -80,13 +79,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		29C67C362219375000EA156F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29C67C192219374F00EA156F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29C67C202219374F00EA156F;
-			remoteInfo = TransferWiseDemo;
-		};
-		29C67C412219375000EA156F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29C67C192219374F00EA156F /* Project object */;
 			proxyType = 1;
@@ -149,7 +141,6 @@
 		29C67C302219375000EA156F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29C67C352219375000EA156F /* TransferWiseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferWiseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C67C3B2219375000EA156F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29C67C402219375000EA156F /* TransferWiseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferWiseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C67C442219375000EA156F /* TransferWiseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferWiseDemoUITests.swift; sourceTree = "<group>"; };
 		29C67C462219375000EA156F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29C67C5322194EA500EA156F /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
@@ -182,13 +173,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		29C67C322219375000EA156F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29C67C3D2219375000EA156F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,7 +317,6 @@
 			children = (
 				29C67C212219374F00EA156F /* TransferWiseDemo.app */,
 				29C67C352219375000EA156F /* TransferWiseDemoTests.xctest */,
-				29C67C402219375000EA156F /* TransferWiseDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -605,24 +588,6 @@
 			productReference = 29C67C352219375000EA156F /* TransferWiseDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		29C67C3F2219375000EA156F /* TransferWiseDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29C67C4F2219375000EA156F /* Build configuration list for PBXNativeTarget "TransferWiseDemoUITests" */;
-			buildPhases = (
-				29C67C3C2219375000EA156F /* Sources */,
-				29C67C3D2219375000EA156F /* Frameworks */,
-				29C67C3E2219375000EA156F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				29C67C422219375000EA156F /* PBXTargetDependency */,
-			);
-			name = TransferWiseDemoUITests;
-			productName = TransferWiseDemoUITests;
-			productReference = 29C67C402219375000EA156F /* TransferWiseDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -637,10 +602,6 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					29C67C342219375000EA156F = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 29C67C202219374F00EA156F;
-					};
-					29C67C3F2219375000EA156F = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 29C67C202219374F00EA156F;
 					};
@@ -661,7 +622,6 @@
 			targets = (
 				29C67C202219374F00EA156F /* TransferWiseDemo */,
 				29C67C342219375000EA156F /* TransferWiseDemoTests */,
-				29C67C3F2219375000EA156F /* TransferWiseDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -683,13 +643,6 @@
 			files = (
 				29C67CB5221D2BAF00EA156F /* posts.json in Resources */,
 				293B5FF7222522C100530FB6 /* comments.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29C67C3E2219375000EA156F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,14 +726,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29C67C3C2219375000EA156F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29C67C452219375000EA156F /* TransferWiseDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -788,11 +733,6 @@
 			isa = PBXTargetDependency;
 			target = 29C67C202219374F00EA156F /* TransferWiseDemo */;
 			targetProxy = 29C67C362219375000EA156F /* PBXContainerItemProxy */;
-		};
-		29C67C422219375000EA156F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29C67C202219374F00EA156F /* TransferWiseDemo */;
-			targetProxy = 29C67C412219375000EA156F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -937,16 +877,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = S6E7873CYT;
 				INFOPLIST_FILE = TransferWiseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.development.mac;
+				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = MohredevelopmentProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -957,16 +897,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = S6E7873CYT;
 				INFOPLIST_FILE = TransferWiseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.development.mac;
+				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = MohredevelopmentProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -977,7 +917,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = S6E7873CYT;
 				INFOPLIST_FILE = TransferWiseDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -987,6 +927,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.bi.TransferWiseDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransferWiseDemo.app/TransferWiseDemo";
@@ -998,7 +939,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = S6E7873CYT;
 				INFOPLIST_FILE = TransferWiseDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1008,49 +949,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.bi.TransferWiseDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransferWiseDemo.app/TransferWiseDemo";
-			};
-			name = Release;
-		};
-		29C67C502219375000EA156F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S6E7873CYT;
-				INFOPLIST_FILE = TransferWiseDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.bi.TransferWiseDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TransferWiseDemo;
-			};
-			name = Debug;
-		};
-		29C67C512219375000EA156F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S6E7873CYT;
-				INFOPLIST_FILE = TransferWiseDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ae.gov.mol.bi.TransferWiseDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TransferWiseDemo;
 			};
 			name = Release;
 		};
@@ -1080,15 +982,6 @@
 			buildConfigurations = (
 				29C67C4D2219375000EA156F /* Debug */,
 				29C67C4E2219375000EA156F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29C67C4F2219375000EA156F /* Build configuration list for PBXNativeTarget "TransferWiseDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29C67C502219375000EA156F /* Debug */,
-				29C67C512219375000EA156F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
